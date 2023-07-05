@@ -1,0 +1,172 @@
+:root{
+    --main-color: black;
+    --sec-color: orange
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* ------------ Start of navbar ----------- */
+
+.navbar {
+  background-color: var(--main-color);
+  padding: 1rem 0;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+  color: #fff;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin-left: 3rem;
+    text-transform: capitalize;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .active, .navbar span, .navbar a:hover{
+    color: var(--sec-color);
+}
+
+/* ----------- End of navbar ----------- */
+
+/* ----------- Start of hero ----------- */
+
+.hero{
+    background-color: var(--sec-color);
+    height: 350px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1, .hero p{
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+
+.hero p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero a{
+    background-color: var(--main-color);
+    padding: 1rem;
+    align-items: center;
+    display: inline-block;
+}
+
+.hero a:hover{
+    opacity: 0.8;
+}
+
+/* ----------- End of hero ----------- */
+
+/*  ---------- Start of about ----------- */
+
+.about{
+    margin-top: 2rem;
+}
+
+.about .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.about img{
+    width: 100%;
+}
+
+.section-title{
+    text-transform: capitalize;
+    color: var(--main-color);
+    /* text-align: center; */
+    margin-bottom: 1rem;
+}
+
+.section-title h1{
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid var(--sec-color);
+    font-size: 25px;
+}
+
+.about p{
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/*  ---------- End of about ----------- */
+
+/* ----------- Start of footer ----------- */
+
+footer{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+
+/* ----------- End of footer ----------- */
+
+/* --------- Start of Responsiveness --------- */
+@media (max-width: 991px)  {
+    .navbar .container{
+        display: block;
+        text-align: center;
+    }
+
+    .navbar h1{
+        margin-bottom: 1rem;
+    }
+
+    .hero h1{
+        font-size: 30px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .hero a{
+        padding: 0.5rem;
+        font-size: 15px;
+    }
+
+    .about .container{
+        display: block;
+
+    }
+}
+
+/* ----------- End Responsiveness ----------- */
